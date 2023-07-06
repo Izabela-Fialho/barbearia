@@ -11,7 +11,7 @@ html, body{
 }
 
 body{
-  background-image: url(/imagens/backgroundImage.png);
+  background-image: url(../imagens/backgroundImage.png);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ header{
   display: block;
   cursor: pointer;
   padding: 10px;
-  background-image: url(/imagens/whiteIcon.png);
+  background-image: url(../imagens/whiteIcon.png);
   background-repeat: no-repeat;
 }
 
