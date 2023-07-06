@@ -1,0 +1,389 @@
+:root {
+  --dark-orange:#AB4E14; 
+  --black:#242630;
+  --medium-orange:#DEA543;
+  --clear:#f8f8f8;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+html, body {
+  margin: 0;
+}
+
+body{
+  background-color: var(--clear);
+}
+span{
+  color:var(--medium-orange)
+}
+
+/* ---------<header>---------- */
+header{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--clear);
+}
+
+.container-header{
+  width: 80vw;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.dropdown-content a , .menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover {
+  color:var(--dark-orange);
+}
+
+.dropdow {
+  display: none;
+  position: relative;
+}
+
+.dropdow ul{
+  list-style: none;
+}
+.dropdow input[type="checkbox"] {
+  display: none;
+}
+
+.dropdow label {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  background-image: url(/imagens/icon.png);
+  background-repeat: no-repeat;
+}
+
+.dropdow label span {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdow input[type="checkbox"]:checked ~ .dropdown-content {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.menu li {
+  display: inline-block;
+}
+
+/* --------- Main ---------- */
+main{
+  display: grid;
+  justify-items: center;
+  height: 100%;
+}
+
+main p,main b{
+  font-size:25px;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+  height: 55vh;
+  width: 80%;
+  padding-top: 100px;
+}
+
+.banner-box-text{
+  background-color: var(--black);
+  flex: 0.5;
+  display: block;
+  height: 100%;
+}
+
+.banner-box-text h1{
+  color: white;
+  font-size: 40px;
+}
+.banner-box-text img,
+.banner-box-text h1 {
+  margin-bottom: 10px;
+}
+
+.banner-box-text h1 {
+  padding: 10px;
+}
+
+.centered-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.banner-box-image{
+  height: 100%;
+  flex: 0.5;
+  display: block;
+}
+
+.banner-box-image div{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 70%;
+  border: 4px solid var(--black);
+  border-left-width: 0; 
+  position: relative;
+  background-image: url(/imagens/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-box-image img{
+  margin: 10px;
+  position: relative;
+}
+
+.right-alignment{
+  float: right;
+}
+
+.banner a{
+  text-decoration: none;
+  background-color: var(--dark-orange);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.banner a:hover {
+  background-color: var(--medium-orange);
+}
+
+/* ---------- */
+
+.container-information{
+  display: block;
+  text-align: center;
+  width:80vw;
+  margin: 10px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.box-information-right,
+.box-information-left
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-information-right{
+  flex-wrap:wrap-reverse;
+}
+
+.box-information-left{
+  flex-wrap: wrap;
+}
+
+
+
+.box-information img {
+  width:300px ;
+  height:300px;
+}
+
+.box-text{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+/* ----------- */
+.background{
+  background-image: url(/imagens/backgroundImage.png);
+  width: 100vw;
+}
+
+.container-grid{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.price{
+  color:var(--medium-orange);
+  font-size: 40px;
+}
+.box-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--dark-orange);
+  border-radius: 10px;
+  color:white;
+}
+
+/* ------- card  ---- */
+.container-card{
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  background-color:rgba(23, 20, 19, 0.335);
+}
+
+.container-card h1{
+  color: rgb(59, 45, 35);
+}
+
+.box-flex-card{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 40px;
+}
+
+.card-teste{
+  width: 190px;
+  height: 300px;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.card {
+  overflow: visible;
+  width: 240px;
+  height: 304px;
+  margin: 40px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 5px #000000ee;
+  border-radius: 5px;
+}
+
+.back {
+  background-color: var(--black);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.back-content img{
+  width:160px;
+  height:160px;
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* ----------- */
+footer{
+  background-color:black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ------ RESPONSIVIDADE ----- */
+
+@media screen and (max-width: 744px) {
+  /* --- <header> --- */
+  .menu{
+    display: none;
+  }
+  .dropdow{
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* --- <main> --- */
+  .banner-box-image{
+    display: none;
+  }
+  .banner-box-text{
+      flex: 1;
+  }
+}

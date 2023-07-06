@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/imagens/favicon.png">
+    <title>Barber Clã</title>
+    <link rel="stylesheet" href = 'scheduling.css'>
+
+</head>
+<body>
+ <!-- ...... <header> .... -->
+  <header>
+    <div class="container-header">
+        <!-- MENU RESPONSIVO -->
+        <nav class="dropdow">
+            <input type="checkbox" id="menu"> 
+            <label for="menu"> 
+                <span></span>
+            </label>
+            <ul class="dropdown-content">
+              <li> <a href="home.html"> INÍCIO</a></li>
+              <li> <a href="scheduling.html"> AGENDAMENTO </a></li>
+            </ul>
+        </nav>
+    
+        <!-- MENU NORMAL -->
+        <nav class="menu">
+            <ul>
+              <li> <a href="home.html"> INÍCIO</a></li>
+              <li> <a href="scheduling.html"> AGENDAMENTO </a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <!-- ..... main ....... -->
+  <main>
+    <div class="box">
+      <img  src="/imagens/bigLogotipo.png" alt="logotipo">
+      <h1> Reserve seu horário </h1>
+      <form>
+  
+        <div class="agroup">
+          <div class="box-input">
+            <label for="input">Nome:</label>
+            <input type="text" placeholder="Digite seu nome..." name="name">
+          </div>
+          <div class="box-input">
+            <label for="phone-input">Telefone:</label>
+            <input type="tel" placeholder="(XX) XXXX-XXXX" name="phone">
+          </div>
+        </div>
+  
+        <div class="agroup">
+          <div class="box-input">
+            <label for="unit-input">Unidade de Serviço:</label>
+            <select name="unit">
+              <option  disabled selected>Selecione a unidade </option>
+              <option>Vila Olimpia</option>
+              <option>Pinheiros</option>
+              <option>Itain Bibi</option>
+            </select>
+          </div>
+          <div class="box-input">
+            <label for="service-input">Tipo de Serviço:</label>
+            <select name="service">
+              <option disabled selected>Selecione seu serviço</option>
+              <option> Corte Masculino</option>
+              <option> Barba Modelada</option>
+              <option>Sobrancelha</option>
+              <option>Limpeza de pele</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="agroup">
+          <div class="box-input">
+            <label for="date-input">Data:</label>
+            <input type="date" name="date">
+          </div>
+          <div class="box-input">
+            <label for="time-input">Horário:</label>
+            <input type="time" name="time">
+          </div>
+        </div>
+      </form>
+        <button type="submit"> RESERVAR</button>
+    </div>
+  </main>  
+  
+  <footer> 
+    <div>
+        <p>  <b> E-mail para contato: </b> izabelaclaraf@gmail.com </p>
+        <p>   Desenvolvido com muito &#128151 por Izabela Fialho. </p>
+    </div>
+  </footer>  
+ 
+</body>
+</html>
